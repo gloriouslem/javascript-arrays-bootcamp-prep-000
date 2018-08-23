@@ -1,13 +1,11 @@
-// 
-
 var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
 
-// 
+// pass
 
 var list = [10, 20]
 
 function addElementToBeginningOfArray (array, element) {
-  newArray = [element, ...array];
+  const newArray = [element, ...array];
   return newArray;
 }
 console.log(addElementToBeginningOfArray (list, 'not changing original'));
@@ -20,6 +18,8 @@ var list = [30, 40]
 
 function destructivelyAddElementToBeginningOfArray (array, element) {
   return array.unshift(element);
+  const newArray = array.unshift(element);
+  return newArray;
 }
 
 destructivelyAddElementToBeginningOfArray (list, 'insert to original');
@@ -51,6 +51,7 @@ console.log(list);
 
 //
 
+<<<<<<< HEAD
 
 function accessElementInArray (array, index) {
   return;
@@ -84,3 +85,5 @@ function removeElementFromEndOfArray (array) {
 }
 
 
+=======
+>>>>>>> 18bb991076fa9d93b5776344b9f23d52576bb361
